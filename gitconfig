@@ -1,0 +1,7 @@
+[user]
+	name = Anton Johansson
+        email = "not-configured"
+[push]
+	default = simple
+[init]
+	templatedir = ~/.dotfiles/git_template
