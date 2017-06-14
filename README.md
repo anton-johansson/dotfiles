@@ -14,3 +14,12 @@ $ touch ~/.privaterc
 $ echo "export WORK_EMAIL=anton.johansson@my-business.com" >> ~/.privaterc
 $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
 ```
+
+
+## Link root
+
+```shell
+$ sudo ln -s $HOME/.zshrc /root/.zshrc
+$ sudo ln -s $HOME/.dotfiles /root/.dotfiles
+$ sudo ln -s $HOME/.privaterc /root/.privaterc
+```
