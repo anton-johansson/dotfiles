@@ -17,4 +17,4 @@ antigen apply
 # Configure the spaceship theme
 SPACESHIP_GIT_BRANCH_PREFIX="⎇  "
 SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_DIR_TRUNC=0
+SPACESHIP_DIR_TRUNC=5
