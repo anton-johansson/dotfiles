@@ -15,6 +15,6 @@ antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 antigen apply
 
 # Configure the spaceship theme
-SPACESHIP_GIT_BRANCH_PREFIX="⎇  "
+#SPACESHIP_GIT_BRANCH_PREFIX="⎇  "
 SPACESHIP_DOCKER_SHOW=false
 SPACESHIP_DIR_TRUNC=5
