@@ -6,7 +6,9 @@ $ git clone git@github.com:anton-johansson/dotfiles.git ~/.dotfiles
 $ ln -s ~/.dotfiles/zshrc ~/.zshrc
 $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 $ ln -s ~/.dotfiles/nanorc ~/.nanorc
-$ ln -s ~/.dotfiles/konsolerc ~/.config/konsolerc
+$ ln -s ~/.dotfiles/konsole/konsolerc ~/.config/konsolerc
+$ ln -s ~/.dotfiles/konsole/anton-johansson.profile ~/.local/share/konsole/anton-johansson.profile
+$ ln -s ~/.dotfiles/konsole/Linux.colorscheme ~/.local/share/konsole/Linux.colorscheme
 ```
 
 
