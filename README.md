@@ -23,6 +23,11 @@ $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
 ```
 
 
+## Templates
+
+See [the additional templates](./templates/).
+
+
 ## Link root
 
 ```shell
