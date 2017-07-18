@@ -6,6 +6,8 @@ $ git clone git@github.com:anton-johansson/dotfiles.git ~/.dotfiles
 $ ln -s ~/.dotfiles/zshrc ~/.zshrc
 $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 $ ln -s ~/.dotfiles/nanorc ~/.nanorc
+$ ln -s ~/.dotfiles/ssh/start.sh ~/.config/autostart-scripts/ssh.sh
+$ ln -s ~/.dotfiles/ssh/stop.sh ~/.config/plasma-workspace/shutdown/ssh.sh
 $ ln -s ~/.dotfiles/konsole/konsolerc ~/.config/konsolerc
 $ ln -s ~/.dotfiles/konsole/anton-johansson.profile ~/.local/share/konsole/anton-johansson.profile
 $ ln -s ~/.dotfiles/konsole/Linux.colorscheme ~/.local/share/konsole/Linux.colorscheme
