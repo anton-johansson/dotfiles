@@ -28,4 +28,19 @@
         </server>
     </servers>
 
+    <profiles>
+        <profile>
+            <id>personal</id>
+            <properties>
+                <gpg.keyname>id of personal key</gpg.keyname>
+            </properties>
+        </profile>
+        <profile>
+            <id>work</id>
+            <properties>
+                <gpg.keyname>id of work key</gpg.keyname>
+            </properties>
+        </profile>
+    </profiles>
+
 </settings>
