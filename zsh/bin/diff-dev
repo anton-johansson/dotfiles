@@ -1,0 +1,8 @@
+#!/bin/sh
+
+file1="$(realpath $1)"
+file2=$file1
+file2="$(echo $file2 | sed -r 's/\/Stable\//\/Dev\//g')"
+file2="$(echo $file2 | sed -r 's/\/Releases\/2.6\/2.6.x\//\/Main\//g')"
+
+meld $file2 $file1
