@@ -27,3 +27,8 @@ $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
 ## Templates
 
 See [the additional templates](./templates/).
+
+
+## License
+
+Apache License © [Anton Johansson](https://github.com/anton-johansson)
