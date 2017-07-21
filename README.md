@@ -27,13 +27,3 @@ $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
 ## Templates
 
 See [the additional templates](./templates/).
-
-
-## Link root
-
-```shell
-$ sudo ln -s $HOME/.zshrc /root/.zshrc
-$ sudo ln -s $HOME/.dotfiles /root/.dotfiles
-$ sudo ln -s $HOME/.privaterc /root/.privaterc
-$ sudo ln -s $HOME/.nanorc /root/.nanorc
-```
