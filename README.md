@@ -3,6 +3,7 @@
 ```shell
 $ git clone https://github.com/zsh-users/antigen.git ~/.zsh/antigen
 $ git clone git@github.com:anton-johansson/dotfiles.git ~/.dotfiles
+
 $ ln -s ~/.dotfiles/zshrc ~/.zshrc
 $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 $ ln -s ~/.dotfiles/subversion ~/.subversion
@@ -12,6 +13,8 @@ $ ln -s ~/.dotfiles/ssh/stop.sh ~/.config/plasma-workspace/shutdown/ssh.sh
 $ ln -s ~/.dotfiles/konsole/konsolerc ~/.config/konsolerc
 $ ln -s ~/.dotfiles/konsole/anton-johansson.profile ~/.local/share/konsole/anton-johansson.profile
 $ ln -s ~/.dotfiles/konsole/Linux.colorscheme ~/.local/share/konsole/Linux.colorscheme
+
+$ chsh -s $(which zsh)
 ```
 
 
