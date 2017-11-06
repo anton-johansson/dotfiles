@@ -1,8 +1,8 @@
 #!/bin/sh
 
-file1="$(realpath $1)"
+file1="$(realpath "$@")"
 file2=$file1
 file2="$(echo $file2 | sed -r 's/\/Dev\//\/Stable\//g')"
 file2="$(echo $file2 | sed -r 's/\/Main\//\/Releases\/2.6\/2.6.x\//g')"
 
-meld $file1 $file2
+meld "$file1" "$file2"
