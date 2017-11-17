@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Check for input parameter existence
+if [ "$#" -ne 2 ]; then
+  echo "Incorrect number of parameters"
+  echo "Usage: svn-set-copied-from <destination> <source>"
+  return 1
+fi
+
+# Get full paths
+destination="$(realpath "$1")"
+source="$(realpath "$2")"
+
+# Check that the files actually exists
+if [ ! -w $destination ]; then
+  echo "Destination does not exist: $file1"
+  return 1
+fi
+
+if [ ! -w $source ]; then
+  echo "Source does not exist: $file2"
+  return 1
+fi
+
+# Exit if there's any change on the source
+sourceSvnStatus="$(svn status $source)"
+if [ ! -z "$sourceSvnStatus" ]; then
+  echo "Source has local changes, exiting!"
+  return 1
+fi
+
+# Fix the copy from!
+mv $destination $source
+svn revert $destination >/dev/null
+svn copy $source $destination >/dev/null
+svn revert $source >/dev/null
+
+echo "Fixed copy from!"
