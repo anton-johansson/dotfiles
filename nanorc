@@ -1,2 +1,5 @@
 # Always show cursor position
 set const
+
+# Include highlighting
+include "~/.dotfiles/nano/yaml.nanorc"
