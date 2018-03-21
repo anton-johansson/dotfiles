@@ -14,6 +14,9 @@ $ ln -s ~/.dotfiles/konsole/konsolerc ~/.config/konsolerc
 $ ln -s ~/.dotfiles/konsole/anton-johansson.profile ~/.local/share/konsole/anton-johansson.profile
 $ ln -s ~/.dotfiles/konsole/Linux.colorscheme ~/.local/share/konsole/Linux.colorscheme
 
+$ wget https://gist.githubusercontent.com/wandernauta/6800547/raw/2c2ad0f3849b1b1cd1116b80718d986f1c1e7966/sp -O ~/.dotfiles/zsh/bin/sp
+$ chmod +x ~/.dotfiles/zsh/bin/sp
+
 $ chsh -s $(which zsh)
 ```
 
