@@ -8,7 +8,9 @@
 
 function mvn-version() {
     # Error checks
-    [[ -z $1 ]] && echo "Requires a version parameter (for example 1.2.3)" && return 1
+    [[ -z $1 ]] && echo "error: Requires a version parameter (for example 1.2.3)" && return 1
+    [[ ! -f pom.xml ]] && echo "error: Not a Maven project" && return 1
+    [[ ! -d .git ]] && echo "error: Not a Git repository" && return 1
 
     # TODO: Allow passing in special values, such as major, minor and revision/patch, similar to `npm version`
 
