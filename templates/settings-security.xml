@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <settingsSecurity>
-
-    <!-- Master password is generated using 'mvn --generate-master-password' -->
+    <!-- Master password is generated using 'mvn --encrypt-master-password' -->
     <master>generated master password</master>
-
 </settingsSecurity>
