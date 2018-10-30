@@ -8,12 +8,15 @@ Favorites=anton-johansson.profile
 ShowMenuBarByDefault=false
 
 [MainWindow]
+Height 1080=1015
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAP3AAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAP5AAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 1920=1920
 Window-Maximized 1080x1920=true
 
 [TabBar]
+ExpandTabWidth=true
 NewTabBehavior=PutNewTabAfterCurrentTab
 TabBarPosition=Top
 TabBarVisibility=ShowTabBarWhenNeeded

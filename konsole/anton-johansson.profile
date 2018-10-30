@@ -1,8 +1,8 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=Linux
-Font=Ubuntu Mono,11,-1,0,50,0,0,0,0,0
+ColorScheme=Breeze
+Font=Ubuntu Mono,11,-1,0,50,0,0,0,0,0,Regular
 UseFontLineChararacters=false
 
 [General]
