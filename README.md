@@ -18,6 +18,8 @@ $ ln -s ~/.dotfiles/kde/kglobalshortcutsrc ~/.config/kglobalshortcutsrc
 $ ln -s ~/.dotfiles/kde/kwinrc ~/.config/kwinrc
 $ ln -s ~/.dotfiles/kde/khotkeysrc ~/.config/khotkeysrc
 $ ln -s ~/.dotfiles/kde/Breeze.colors ~/.kde/share/apps/color-schemes/Breeze.colors
+$ ln -s ~/.dotfiles/kde/plasma_calendar_holiday_regions ~/.config/plasma_calendar_holiday_regions
+$ ln -s ~/.dotfiles/kde/plasma-localerc ~/.config/plasma-localerc
 
 $ wget https://gist.githubusercontent.com/wandernauta/6800547/raw/2c2ad0f3849b1b1cd1116b80718d986f1c1e7966/sp -O ~/.dotfiles/zsh/bin/sp
 $ chmod +x ~/.dotfiles/zsh/bin/sp
