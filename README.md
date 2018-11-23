@@ -1,5 +1,10 @@
 # dotfiles
 
+These dotfiles works best when applied on a fresh installation created using [these configuration scripts](https://github.com/anton-johansson/linux-configs).
+
+
+## Install
+
 ```shell
 $ git clone git@github.com:zsh-users/antigen.git ~/.zsh/antigen
 $ git clone git@github.com:anton-johansson/dotfiles.git ~/.dotfiles
