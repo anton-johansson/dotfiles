@@ -32,5 +32,5 @@ function mvn-version() {
 
     # TODO: If the branch is `master`, update minor to next version and commit
 
-    echo "Run 'git push --tags' to push the new version"
+    echo "Run 'git push origin $tag' to push the new version"
 }
