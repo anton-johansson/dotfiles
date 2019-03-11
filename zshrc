@@ -19,3 +19,13 @@ export PATH=$PATH:$DOTFILES_SCRIPTS:$N_PREFIX/bin:$NPM_PACKAGES/bin:$GOROOT/bin:
 
 # Set zsh options
 HISTFILE=$HOME/.zsh/history
+
+# Lazy load kubectl auto-completion (creds: https://stackoverflow.com/questions/42356861/can-i-use-autocompletion-for-kubectl-in-zsh)
+kubectl () {
+    command kubectl $*
+    if [[ -z $KUBECTL_COMPLETE ]]
+    then
+        source <(command kubectl completion zsh)
+        KUBECTL_COMPLETE=1
+    fi
+}
