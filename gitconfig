@@ -1,6 +1,9 @@
 [user]
 	name = Anton Johansson
 	email = "not-configured"
+        signingkey = "not-configured"
+[commit]
+        gpgsign = true
 [push]
 	default = simple
 [init]
