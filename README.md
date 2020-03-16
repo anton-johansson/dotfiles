@@ -47,8 +47,10 @@ $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
 
 I have two keys that needs to be renewed around 1st of April each year:
 
-Personal: `16E82FC3BA121625`
+Personal: `16E82FC3BA121625` \
 Work: `A1D2C0AB770D90D7`
+
+I use these for signing all my Git commits and for signing Maven artifacts.
 
 ### Renewing keys
 
