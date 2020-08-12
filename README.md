@@ -40,6 +40,7 @@ $ chsh -s $(which zsh)
 $ touch ~/.privaterc
 $ echo "export WORK_EMAIL=anton.johansson@my-business.com" >> ~/.privaterc
 $ echo "export WORK_GIT_HOSTNAME=some-hostname" >> ~/.privaterc
+$ echo "export WORK_GIT_SIGNING_KEY=some-key" >> ~/.privaterc
 ```
 
 
