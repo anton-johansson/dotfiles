@@ -6,10 +6,6 @@ source ~/.privaterc
 # Include customs cripts
 DOTFILES_SCRIPTS="${HOME}/.dotfiles/zsh/bin"
 
-# N and NPM
-N_PREFIX="/opt/n"
-NPM_PACKAGES="${HOME}/.npm-packages"
-
 # Golang
 GOROOT=/usr/local/go
 GOPATH=${HOME}/go
@@ -29,3 +25,11 @@ kubectl () {
         KUBECTL_COMPLETE=1
     fi
 }
+
+# Configure Node Package Manager
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+# Configure Node Version Manager (NVM)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
