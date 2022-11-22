@@ -8,3 +8,4 @@
 	default = simple
 [init]
 	templatedir = ~/.dotfiles/git_template
+	defaultBranch = main
