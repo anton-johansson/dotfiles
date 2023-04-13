@@ -3,7 +3,7 @@
     <mirrors>
         <mirror>
             <id>work-mirror</id>
-            <url>http://repository.work.com/maven-public/</url>
+            <url>https://repository.work.com/maven-public/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>

@@ -3,7 +3,7 @@
 	email = "not-configured"
 	signingkey = "not-configured"
 [commit]
-	gpgsign = true
+	gpgsign = false
 [push]
 	default = simple
 [init]

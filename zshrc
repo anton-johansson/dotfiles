@@ -1,17 +1,28 @@
-source ~/.dotfiles/zsh/antigen.zsh
 source ~/.dotfiles/zsh/aliases.zsh
-source ~/.dotfiles/zsh/functions.zsh
 source ~/.privaterc
+source ~/.gvm/scripts/gvm
 
 # Include customs cripts
 DOTFILES_SCRIPTS="${HOME}/.dotfiles/zsh/bin"
+export PATH="$PATH:$DOTFILES_SCRIPTS"
 
-# Golang
-GOROOT=/usr/local/go
-GOPATH=${HOME}/go
+# Configure Maven
+M2_HOME="/opt/apache-maven-3.8.5"
+PATH="$PATH:$M2_HOME/bin"
 
-# Include binaries on the path
-export PATH=$PATH:$DOTFILES_SCRIPTS:$N_PREFIX/bin:$NPM_PACKAGES/bin:$GOROOT/bin:$GOPATH/bin
+# Oh my zsh
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_CHAR_SYMBOL=❯
+SPACESHIP_CHAR_SYMBOL_FAILURE=✖
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_PROMPT_ORDER=(time dir git exec_time async line_sep battery jobs exit_code sudo char)
+ZSH_THEME="spaceship"
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+source ~/.dotfiles/zsh/oh-my-zsh/oh-my-zsh.sh
+
+# fnm
+export PATH="/home/viantjoh/.local/share/fnm:$PATH"
+eval "`fnm env`"
 
 # Set zsh options
 HISTFILE=$HOME/.zsh/history
@@ -25,11 +36,3 @@ kubectl () {
         KUBECTL_COMPLETE=1
     fi
 }
-
-# Configure Node Package Manager
-NPM_PACKAGES="${HOME}/.npm-packages"
-
-# Configure Node Version Manager (NVM)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
