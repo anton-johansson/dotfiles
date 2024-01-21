@@ -15,7 +15,10 @@ SPACESHIP_TIME_SHOW=true
 SPACESHIP_CHAR_SYMBOL=❯
 SPACESHIP_CHAR_SYMBOL_FAILURE=✖
 SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_PROMPT_ORDER=(time dir git exec_time async line_sep battery jobs exit_code sudo char)
+SPACESHIP_KUBECTL_SHOW=true
+SPACESHIP_KUBECTL_SYMBOL="☸️ "
+SPACESHIP_KUBECTL_SUFFIX=""
+SPACESHIP_PROMPT_ORDER=(time dir git kubectl exec_time async line_sep battery jobs exit_code sudo char)
 ZSH_THEME="spaceship"
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 source ~/.dotfiles/zsh/oh-my-zsh/oh-my-zsh.sh
