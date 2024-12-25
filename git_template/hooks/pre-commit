@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# A git hook to make sure user.email and user.signingkey exists before committing
+# A git hook to make sure user.email exists before committing
 
 EMAIL_PERSONAL="hello@anton-johansson.com"
 EMAIL_WORK="$WORK_EMAIL"
@@ -8,34 +8,24 @@ EMAIL_WORK="$WORK_EMAIL"
 ORIGIN_PERSONAL="github.com"
 ORIGIN_WORK="$WORK_GIT_HOSTNAME"
 
-KEY_PERSONAL=16E82FC3BA121625
-KEY_WORK="$WORK_GIT_SIGNING_KEY"
-
 EMAIL=$(git config user.email)
 ORIGIN=$(git config remote.origin.url)
-KEY=$(git config user.signingkey)
 
-if [ "$EMAIL" = "not-configured" ] || [ "$KEY" = "not-configured" ]; then
+if [ "$EMAIL" = "not-configured" ]; then
     if [[ "$ORIGIN"  == *"$ORIGIN_PERSONAL"* ]]; then
         echo "Setting 'user.email' to '$EMAIL_PERSONAL'"
-        echo "Setting 'user.signingkey' to '$KEY_PERSONAL'"
         echo "Re-run the commit"
         git config user.email $EMAIL_PERSONAL
-        git config user.signingkey $KEY_PERSONAL
     elif [[ "$ORIGIN" == *"$ORIGIN_WORK"* ]]; then
         echo "Setting 'user.email' to '$EMAIL_WORK'"
-        echo "Setting 'user.signingkey' to '$KEY_WORK'"
         echo "Re-run the commit"
         git config user.email $EMAIL_WORK
-        git config user.signingkey $KEY_WORK
     else
-        echo "Aborting commit because 'user.email' or 'user.signingkey' is missing."
+        echo "Aborting commit because 'user.email' is missing."
         echo "For personal repositories, run the following:"
         echo " git config user.email $EMAIL_PERSONAL"
-        echo " git config user.signingkey $KEY_PERSONAL"
         echo "For work repositories, run the following:"
         echo " git config user.email $EMAIL_WORK"
-        echo " git config user.signingkey $KEY_WORK"
     fi
     exit 1
 fi
