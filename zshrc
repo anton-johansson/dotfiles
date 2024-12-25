@@ -6,7 +6,7 @@ DOTFILES_SCRIPTS="${HOME}/.dotfiles/zsh/bin"
 export PATH="$PATH:$DOTFILES_SCRIPTS"
 
 # Configure Maven
-M2_HOME="/opt/apache-maven-3.8.5"
+M2_HOME="/opt/apache-maven"
 PATH="$PATH:$M2_HOME/bin"
 
 # Oh my zsh
