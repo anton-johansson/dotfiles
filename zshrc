@@ -1,6 +1,5 @@
 source ~/.dotfiles/zsh/aliases.zsh
 source ~/.privaterc
-source ~/.gvm/scripts/gvm
 
 # Include customs cripts
 DOTFILES_SCRIPTS="${HOME}/.dotfiles/zsh/bin"
@@ -24,8 +23,11 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 source ~/.dotfiles/zsh/oh-my-zsh/oh-my-zsh.sh
 
 # fnm
-export PATH="/home/viantjoh/.local/share/fnm:$PATH"
-eval "`fnm env`"
+FNM_PATH="/home/viantjoh/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/viantjoh/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 # Set zsh options
 HISTFILE=$HOME/.zsh/history
@@ -39,3 +41,4 @@ kubectl () {
         KUBECTL_COMPLETE=1
     fi
 }
+
